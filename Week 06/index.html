@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_06_style.css" rel="stylesheet" type="text/css">
+    <script src="week_06.js"></script>
+    <title>HTML 5 Tags for Media</title>
+</head>
+<body onload="drawing()">
+
+    <main id="wrap">
+    <div id="header">
+    <h1>HTML 5 Tags For Media</h1>
+    </div>
+
+    <h2>HTML Video Tag</h2>
+    
+    <p>The video tag allows HTML to embed videos:<br>
+    It is very useful if we want to share media.<br>
+    We can specify the height and width of the video box along with the type ="" to set our browser.</p>
+
+    <p>There are additional attributes to configurate our video tag:<br><br>
+        <b>*Autoplay:</b> Sets the video to start after it's ready.<br>
+        <b>*Controls:</b> Adds controls like volume and play buttons to the video.<br>
+        <b>*Loop:</b> Sets the video to repeat itself over and over again.<br>
+        <b>*Muted:</b> Mutes the audio output.
+    </p>
+    
+    <h2>Animals</h2>
+    <h3>Cheetah Running!</h3>
+    <p>Watch this awesome animal running at full speed:</p>
+    <video width="500" height="400" controls>
+        <source src="video/Cheetah.mp4" type="video/mp4">
+            Not supported by browser
+    </video>
+
+    <h2>Rain</h2>
+    <p>Raining every day!</p>
+    <video width="500" height="400" controls>
+        <source src="video/rain.mp4" type="video/mp4">
+            Not supported by browser
+    </video>
+
+
+
+    <h2>Gaming</h2>
+    <h3>Megaman Joins the Battle!</h3>
+    <p>This video is a property of Capcom and Nintendo companies</p>
+    <video width="500" height="400" controls>
+        <source src="video/megaman2.mp4" type="video/mp4">
+            Not supported by browser
+    </video>
+
+    <h2>HTML Audio Tag</h2>
+    <p>The audio tag reproduces sounds and several types of audio files.</p>
+    <p>USE javascript and store the audio via document.getelementbyid().audio.play</p>
+    
+    <p>Here is an example using the audio tag:<br>
+    Check out some of your favorite animals' noises:</p>
+
+    <h3>Bear</h3>
+    <audio controls>
+        <source src="audio/bear.mp3" type="audio/mpeg">   
+    </audio>
+
+    <h3>Bat</h3>
+    <audio controls>
+        <source src="audio/bat.mp3" type="audio/mpeg">   
+    </audio>
+
+    <h3>Dog</h3>
+    <audio controls>
+        <source src="audio/dog.mp3" type="audio/mpeg">   
+    </audio>
+
+    <h3>Wolf</h3>
+    <audio controls>
+        <source src="audio/wolf.mp3" type="audio/mpeg">   
+    </audio>
+
+    <h3>This funny Leeroy guy:</h3>
+        <audio controls>
+            <source src="audio/Jenkins.mp3" type="audio/mpeg">   
+        </audio>
+    
+        
+
+
+    <h2>HTML Canvas</h2>   
+    <p>Canvas is used to draw using javascript functions for placement and styling.</p>
+
+    <p>For this process, it is important to learn some attributes in JS<br>
+        getElementById links our canvas element into a variable<br>
+        that is called along with .getContext("2d"); this specifies<br>
+        that our work will limit to 2d drawing.</p>
+    <canvas id="canvas1" width="600" height="500"></canvas>
+
+
+    <h3>Creating a Circle</h3>
+    <p>If the variable storing the .getContext("2d"); is named <b>ctx</b><br>
+      We use -> fillStyle to add a color to our draw -> ctx2.fillStyle ="red";<br>
+      We use -> beginPath to indicate where our draw begins -> ctx2.beginPath();<br>
+      We use -> .arc to create an arc or curve used for circles -> ctx2.arc(195,130,100,0,Math.PI*2,true);<br>
+      .arc structure is (x,y,radius,starting angle,ending angle)<br>
+      We use -> .fill() to set the drawing -> ctx.fill();
+     </p>
+
+        <canvas id="canvas3" width="400" height="300"></canvas>
+    <br>
+    <h3>Pokeball</h3>
+    <p>Gotta catch them all!</p>
+    <p>This is a mixture between a circle, a couple of smaller circles,<br>
+    and a rectangle with a circle to finish the draw.</p>
+    <canvas id="canvas2" width="400" height="300"></canvas>
+
+    </main>
+</body>
+</html>
