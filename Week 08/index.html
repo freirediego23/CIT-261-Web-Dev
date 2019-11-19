@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_08_style.css" rel="stylesheet" type="text/css">
+    <script src="week_08.js"></script>
+    <title>DOM Document Object Model</title>
+</head>
+<body>
+    
+    <main id="wrap">
+    <div id="header">
+    <h1>DOM Document Object Model</h1>
+    </div>
+
+    <h2>Using CreateElement</h2>
+        <p>CreateElement will create a new element in HTML.<br>
+            You need to determine the element. This works in combination<br>
+            with appendChild()
+        </p>
+
+        <p>Prepare a var to contain the function -> var child = document.createElement("b");<br>
+        This will allow us to add text for the element whenever necessary -> child.innerText = "Object created!";<br>
+        Typing <b>appendChild</b> will append the element you create as the last node to create more elements<br>
+        document.getElementById('container1').appendChild(child);</p>
+
+        <p>The "b" stands for "bold" to create a bold text element</p>
+
+        <p>Click this button to create several text elements:</p><br>
+
+        <div id="container1">
+        <button type="button" onclick="dom1()">Start</button><br>
+        </div><br>
+
+        <h3>List of words</h3>
+
+        <div id="container3">
+            <button type="button" onclick="dom3()">Start</button><br>
+            </div>
+
+
+            <h3>Remove a smiple child element</h3>
+
+            <p>Specify a variable referencing the element in the DOM -> var object = document.getElementById('listobject');<br>
+               Setting removeChild first we declare the variable and then the child node with it's number id -> object.removeChild(object.childNodes[1]);</p>
+               <p> Setting the number to 1 will eliminate the second element because order ID goes [0,1,2,3] ->  (object.childNodes[1]</p>
+
+            <ul id="listobject">
+                <li>number 0</li>
+                <li>number 1</li>
+                <li>number 3</li>
+                <li>number 4</li>
+
+            </ul>
+                <button type="button" onclick="dom4()">Start</button><br>
+                   
+
+
+        <h2>This is a box full of chocolates!</h2>
+
+        <p>We will combine <b>create element, remove child, and insert before commands.</b></p>
+        <p>First create an element using create element. It will be a div element</p>
+        <p>For this case, we add set atrribute to our element variable -> choco.setAttribute("id", "chocolate");<br>
+        This will set an id for each div element created to add the dark chocolates!</p>
+
+        <p>To remove an element, first specify it's location in the DOM -> var remove = document.getElementById('chocolate');</p>
+        <p>We use <b>removeChild</b> to remove a child node of an specific element -> return remove.parentNode.removeChild(remove);</p>
+
+        <h3>This will create the other chocolate</h3>
+        
+        <p>This is a normal create element code, but it was set to be <b>inserted before</b> the first chocolate</p>
+
+        <p>function insert() {<br>
+            var choco1 = document.getElementById('chocolate').lastChild;<br>
+            <br>
+            var choco2 = document.createElement("div");<br>
+            choco2.setAttribute("id", "chocolate2");<br>
+            document.getElementById('container2').appendChild(choco2);<br>
+            <br>
+            choco2.insertBefore(choco1, choco2);<br>
+        
+        }</p>
+
+        <p>The <b>insertBefore</b> will insert a node as a child before an existing element -> choco2.insertBefore(choco1, choco2);</p>
+        <button type="button" onclick="dom2()">Buy Chocolate</button><br>
+        <button type="button" onclick="insert()">Different Chocolate</button><br>
+        <button type="button" onclick="remove()">Remove Child Chocolate</button><br>
+        <button type="button" onclick="remove2()">Remove Stranded Chocolate</button><br>
+        
+        <div id="container2">
+        </div>
+
+
+
+</main>
+</body>
+</html>
