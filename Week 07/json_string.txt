@@ -1,0 +1,13 @@
+[{"City":"Portoviejo" , 
+  "Description":"One of the best touristical destinations for the people",
+  "Population": "1 million"},
+
+  {"City": "Manta", 
+   "Description": "This city has one of the best beaches of the country",
+   "Population": "2 million"
+},
+
+  {"City": "Guayaquil", 
+   "Description": "This city has museums, beach, and is the home of the temple",
+   "Population": "5 million"
+}]
