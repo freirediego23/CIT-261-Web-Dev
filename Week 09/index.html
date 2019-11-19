@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_09_style.css" rel="stylesheet" type="text/css">
+    <script src="week_09.js"></script>
+    <title>CSS3 Transitions</title>
+</head>
+<body>
+    
+<main id="wrap">
+<div id="header">    
+<h1>CSS3 Transitions</h1>
+</div>
+
+<h2>Using Transition</h2>
+
+<p>It will allow us to gradually change an element with the values we set.</p>
+<p>Here are some examples:</p>
+
+<h3>Give Color</h3>
+
+<p>Click the button to activate the transition effect. You will see how the square<br>
+changes to orange with yellow borders <b>gradually</b></p>
+
+<div id="block1"></div>
+
+<button type="button" onclick="convert()">Convert</button>
+
+<h3>Changing Dimensions</h3>
+
+<p>We can alter the dimensions of a div elements and then adding a transition.<br>
+For this example, width and height changes will be triggered once you hover the square.</p>
+
+<p>This is the div triggered with hover condition -> #block2:hover {<br>
+   Height values -> height: 250px;<br>
+   Width values -> width: 400px;<br>
+}</p>
+
+<div id="block2"></div>
+
+
+<h3>Hide and seek</h3>
+
+<p>Setting the visibility property to "hidden" once you hover the square.<br>
+This element will disappear but it is still present in the DOM</p>
+
+<div id="block3"></div>
+
+<h3>Transitioning Shapes</h3>
+
+<p>What if we turn this square into a circle an viceversa<br>
+</p>
+
+<div id="block5"></div>
+
+
+<h3>Paragraphs</h3>
+
+<p>Possible changes include text, images, and other elements of the DOM.<br>
+The most important thing is to know CSS properties and values!</p>
+
+
+<p id="block4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum sem eu mauris placerat elementum.<br> 
+    Curabitur at molestie nisi. Nunc quis ante mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra,<br> 
+    per inceptos himenaeos. Fusce feugiat dui et erat venenatis consectetur.</p>
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
+
+#block1 {
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    width: 200px;
+    transition: 2s;
+}
+
+
+#block2 {
+    background-color: gainsboro;
+    border: 8px solid black;
+    height: 200px;
+    width: 200px;
+    transition: 3s;
+}
+
+#block2:hover {
+
+    height: 250px;
+    width: 400px;
+    
+}
+
+#block3 {
+    background-color: yellow;
+    border: 8px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50% 50% 50% 50%;
+    transition: 2s;
+    transition-timing-function: ease-out;
+}
+
+#block3:hover {
+    visibility: hidden;
+
+}
+
+
+#block4 {
+    color: white;
+    font-size: 15px;
+    transition: 3s;
+}
+
+#block4:hover {
+    color: black;
+    border: 2px solid black;
+    font-family: 'Supermercado One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#block5 {
+    background-color: yellow;
+    border: 8px solid black;
+    height: 200px;
+    width: 200px;
+    transition: 2s;
+}
+
+
+#block5:hover {
+    background-color: red;
+    border: 8px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+body {
+    background-color: #F8F9F9;
+}
+
+#wrap {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30 px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px; 
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
+button {
+    margin-left: 15px;
+}
+
+input {
+    margin-left: 15px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+
+div {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
