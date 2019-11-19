@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_10_style.css" rel="stylesheet" type="text/css">
+    <script src="week_10.js"></script>
+    <title>CSS3 Transforms</title>
+</head>
+<body>
+    
+    <main id="wrap">
+    <div id="header">
+    <h1>CSS3 Transforms</h1>
+    </div>
+    <h2>Transform!</h2>
+
+    <p>This property adds a 2D or even 3D transformation to an element.<br>
+    Features include: rotate, translate, scale, and skew.</p>
+
+
+    <h2>Rotate</h2>
+
+    <p>Moves an element clock or counter clockwise according to your value.<br>
+    Don't forget to set the word "deg" at the end of your value</p>
+    <p><b>rotate(80deg);</b></p>
+    <div id="block1"></div><br>
+
+    <p><b>rotate(280deg);</b></p>
+    <div id="block2"></div>
+
+    <h2>Rotate 3D</h2>
+
+    <p>Using rotateX -> Rotates the element through its X axis </p>
+    <p><b>rotateX(80deg);</b></p>
+    <div id="block3"></div>  
+    
+    <p>Using rotateY -> Rotates the element through its Y axis </p>
+    <p><b>rotateY(280deg);</b></p>
+    <div id="block4"></div>
+    
+    <p>Rotate(1080deg); -> This will cause a fast rotation</p>
+    <div id="block13"></div>
+
+    <h2>Scale</h2>
+
+    <p>It will increase an element's width</p>
+    <P>Using scaleX(5) increases the width thorugh the X axis</P>
+    
+    <div id="block5"></div>
+
+    <h3>Scale 3D</h3>
+    <p>Use scale to add 3D styling</p>
+    <p>scale3d(3,2,1) x,,y,z values</p>
+
+    <div id="block6"></div>
+
+    <h2>Skew</h2>
+    <p>This method skews the element in its X and Y axis according to the values given</p>
+
+    <p>skew(30deg,20deg);</p>
+
+    <div id="block7"></div>
+
+    <h3>Skew 3D</h3>
+    <p>3D effects can be applied through X and Y axis</p>
+    <p>skewX(10deg); skewY(160deg);</p>
+
+    <div id="block8"></div>
+    <br><br>
+    <h2>Translate</h2>
+    <p>Moves an element to another position according to the values for the X and Y axis</p>
+    
+    <p><b>Normal block:</b></p>
+    <div id="block9"></div>
+
+    <p><b>Translate block</b></p>
+    <p>translate(70px,30px);</p>
+    <div id="block10"></div>
+    <br><br>
+    <h3>Translate 3D</h3>
+
+    <p>We will apply translateX, Y for 3D effects:
+    </p>
+    <p>translateX(100px); -> Defines the location through the X axis</p>
+    <div id="block11"></div>
+
+    <p>translateY(150px); -> Defines the location through the Y axis</p>
+    <div id="block12"></div>
+
+
+    <h3>Combining Transformations</h3>
+
+    <p>We will combine rotate, scale, and translate transformations</p>
+    <p>Using a nested transform property ->  transform: rotate(1080deg) scale(3) translateX(200px);</p>
+    <div id="block14"></div>
+
+</main>
+</body>
+</html>

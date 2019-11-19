@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
+
+
+
+body {
+    background-color: #F8F9F9;
+}
+
+#wrap {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #ef4658;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30 px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px; 
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+button {
+    margin-left: 15px;
+}
+
+input {
+    margin-left: 15px;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+
+div {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+
+#block1 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+
+    transform: rotate(80deg);
+}
+
+#block2 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+
+    transform: rotate(280deg);
+}
+
+#block3 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+
+    
+    transition: 2s;
+}
+
+#block3:hover {
+    transform: rotateX(180deg);
+}
+
+#block4 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+
+    
+    transition: 2s;
+}
+
+#block4:hover {
+    transform: rotateY(280deg);
+}
+
+
+#block5 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+    transform: scaleX(3);
+    
+    transition: 2s;
+}
+
+#block6 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+
+    
+    transition: 2s;
+}
+
+#block6:hover {
+    transform: scale3d(3,2,1);
+}
+
+#block7 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+    transform: skew(30deg,20deg);
+    
+    transition: 2s;
+}
+
+#block8 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 200px;
+    margin-top: 45px;
+    width: 200px;
+    transform: skewX(10deg);
+    transform: skewY(160deg);
+    transition: 2s;
+}
+
+#block9 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 35px;
+    width: 100px;
+}
+
+#block10 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 45px;
+    width: 100px;
+    transform: translate(70px,30px);
+}
+
+#block11 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 45px;
+    width: 100px;
+    transition: 2s;
+}
+
+#block11:hover {
+    transform: translateX(100px);
+}
+
+#block12 {
+
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 45px;
+    width: 100px;
+    transition: 2s;
+}
+
+#block12:hover {
+    transform: translateY(150px);
+    
+}
+
+
+#block13 {
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 45px;
+    width: 100px;
+    transition: 2s;
+}
+
+#block13:hover {
+    transform: rotate(1080deg)
+    
+    
+}
+
+#block14 {
+    background-color: white;
+    border: 8px solid black;
+    height: 100px;
+    margin-top: 45px;
+    width: 100px;
+    transition: 2s;
+}
+
+#block14:hover {
+    transform: rotate(1080deg) scale(3) translateX(200px);
+    
+    
+}
