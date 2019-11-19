@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_04_style.css" rel="stylesheet" type="text/css">
+    <script src="week_04.js"></script>
+    <title>Javascript Objects</title>
+</head>
+<body>
+
+   <main id="wrap">
+   <div id="header">
+    <h1>Javascript Objects</h1>
+      </div>
+    <h2>Object Creation Functions & Properties</h2>
+
+    <p>Objects allows us to manipulate and organize arrays of data..<br>
+       Here are some info:</p>
+
+       <p>This is the stucture of an object: Properties are the left side of : and values are the right side.
+        <br>var location = {country:"Ecuador", city:"Quito", address:"Simon Bolivar theater", zip:"123"};
+        <br>We can now display different aspects of the array using location.country to display the country.<br>
+    
+       </p>
+       <p>Properties structure - > objectname.property<br>
+          In this case, properties are - > location.country - location.city, address, zip.<br>
+          These properties can be changed or removed.</p>
+       <button type="button" onclick="activate()">Start</button>
+       <p id="space"></p>
+
+       <h2>Using New Object Function</h2>
+       <p>New Object has the same result as defining an object with properties and values:<br>
+        var location = new.object{}<br>
+        location.country = "Ecuador";<br>
+        location.city = "Quito";<br>
+       </p>
+
+       <h2>Using Object.Create</h2>
+       <p>Object Create lets you prepare a new object using a previous one as prototype<br>
+        The first part of this function is the old object to be re-used and the other part<br>
+        involves all the new values added to the new object.</p>
+
+        <p>We will add additional values to the "location" object using it as prototype<br>
+            and we will change the city name:
+            <ul>
+                <li>Telephone</li>
+                <li>ID</li>
+            </ul>
+        </p>
+
+        <button type="button" onclick="objnew()">Update Location</button>
+        <p id="outputobj"></p>
+
+
+        <h2>Object List</h2>
+        <p>We use object.create to define a car profile.<br>
+        Using a prototype if necessary and then defining the values for the new element that is all car info.</p>
+
+        <button type="button" onclick="update()">Start</button>
+        <div id="creatOutput"></div>
+
+
+
+        <h2>Inheritance</h2>
+        <p>We will add a new phrase to the array container.</p>
+        <button type="button" onclick="par()">Start</button>
+        <div id="paroutput"></div>
+
+
+        <h2>Inheritance - Continued</h2>
+        <p>There is a first object containing the sentences.<br>
+        I used the Object.create method to create a new object<br>
+        which will inherit the values of the first one and will add a new one.<br>
+        The bold letters for each sentence.</p>
+        <button type="button" onclick="showinfo()">Start</button>
+        <p id='inoutput'></p><span id='inoutput2'></span>   
+        <p id='glass'></p><span id='glass2'></span>
+        <p id='soccer'></p><span id='soccer2'></span>
+        <p id='class'></p><span id='class2'></span> 
+
+
+        <h2>Object Methods</h2>
+        <p>Methods are actions that can be applied to object properties in JS.</p>
+
+        <h3>Object.entries</h3>
+        <p>Turns objects properties into one array</p>
+
+        <p>var id = {name: "Diego", age:20}<br>
+           var info = Object.entries(id);<br></p>
+            <div id="entry"></div>
+           <button type="button" onclick="entry()">Start</button>
+
+
+        <h3>Object.keys</h3>
+        <p>This method picks only the key values of an object and returns an array.</p>
+
+        <p>var city = {name: "Quito", population:3 million}<br>
+           var info = object.keys(city);<br></p>
+            <div id="entry2"></div>
+           <button type="button" onclick="entry2()">Start</button>
+
+
+           <h3>Object.values</h3>
+           <p>This method will only return the values of object properties</p>
+   
+           <p>var cars = {name: "Toyota", number:5}<br>
+              var info = Object.values(cars);<br></p>
+              <div id="entry3"></div>
+              <button type="button" onclick="entry3()">Start</button>
+      
+
+              <h3>Object.freeze</h3>
+              <p>This method will prevent changes to be applied to your object.<br>
+                 I think that's why it is called freeze.</p>
+      
+              <p> var id = {name: "Diego", age:20};<br>
+    
+                 var freeze = Object.freeze(id);<br>
+                 freeze.name = "Fernando";<br>
+                 freeze.age = 30;<br>
+                
+                </p>
+                  <div id="entry4"></div>
+                 <button type="button" onclick="entry4()">Start</button>     
+        
+            <h2>Object Instantiation</h2>
+            
+            <h3>Functional Instantiation</h3>
+            <p>Functional instantiation defines all methods in the constructor function.<br>
+            This is considered good when you are not working with a lot of instances.<br>
+            New sets of methods are creating for every instance and it may consume memory.</p>
+
+            <div id="object1"></div>
+                 <button type="button" onclick="instantiation()">Start</button>   
+            
+            <h3>Object Functional-shared </h3>
+            <p>Instead of declaring all methods in each function, we now store every method<br>
+            in an object. The object sotring our methods will be referenced in any new object we want.  </p>
+
+            <div id="object2"></div>
+                 <button type="button" onclick="functionshare()">Start</button>
+            
+
+            <h3>Object Prototype </h3>
+            <p>Prototype has a similar behavior with function-shared because both<br>
+               use an object to store methods. We use Object.create and reference the object<br>
+               that contains the method as our prototype for the new object created. 
+             </p>
+
+            <div id="object3"></div>
+                 <button type="button" onclick="prototype()">Start</button>
+
+
+             <h3>Object Pseudoclassical </h3>
+            <p>This method simplifies typing. We don't store our methods in an object<br>
+               to be later called. We use the word "this" to replace Object.create<br>
+               and we add our methods to the prototype
+               
+             </p>
+
+            <div id="object4"></div>
+                 <button type="button" onclick="pseudo()">Start</button>
+
+                 </main>
+
+</body>
+</html>
