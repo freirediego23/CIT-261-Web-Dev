@@ -137,6 +137,7 @@ a {
    border-radius: 10px;
     color: white;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 
 #section6:hover {
@@ -154,6 +155,7 @@ a {
    border-radius: 10px;
     color: white;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 
 #section7:hover {
@@ -171,6 +173,7 @@ a {
    border-radius: 10px;
     color: white;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 
 #section8:hover {
@@ -205,6 +208,7 @@ a {
    border-radius: 10px;
     color: white;
     transition: all .2s ease-in-out;
+    text-align: center;
 }
 
 #section10:hover {
@@ -218,12 +222,46 @@ a {
     justify-content: center;
    width: 100%;
    height: 100%; 
-   background-color: #f99157;
+   background-color: #3b5998;
    border-radius: 10px;
     color: white;
     transition: all .2s ease-in-out;
 }
 
 #section11:hover {
+    transform: scale(1.1);
+}
+
+#section12  {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 100%; 
+   background-color: #ef4658;
+   border-radius: 10px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+#section12:hover {
+    transform: scale(1.1);
+}
+
+#section13  {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   height: 100%; 
+   background-color: #273238;
+   border-radius: 10px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+#section13:hover {
     transform: scale(1.1);
 }
