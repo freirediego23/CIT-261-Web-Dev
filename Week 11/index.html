@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_11_style.css" rel="stylesheet" type="text/css">
+    <script src="week_11.js"></script>
+    <title>CSS Animations</title>
+</head>
+<body>
+    
+    <main id="wrap">
+    <div id="header">
+    <h1>CSS Animations</h1>
+        </div>
+    <p>We can use animation to change an element's values with timing, movement, and dimension.</p>
+
+    <h3>Keyframes</h3>
+    <p>This is a set of instructions where you specify the css properties.<br>
+    You also specify the different moments when the animation will start using percentages<br>
+    like 25%, 50%, 75%, indicating the different animation moments.</p>
+
+
+    <h3>Moving Objects and Colors</h3>
+
+    <p>We will set an object to move to the right while changing its color</p>
+
+    <p>This is the keyframe configuration:</p>
+
+    <p>In each keyframe, the left property directs the object to the left side of the DOM</p>
+    <p>@keyframes move {<br><br>
+
+        0% {background-color: white; left: 0px;}<br>
+        20% {background-color: rgb(233, 221, 221); left: 100px;}<br>
+        40% {background-color: rgb(212, 206, 206); left: 200px;}<br>
+        60% {background-color: rgb(163, 159, 159); left: 300px;}<br>
+        80% {background-color: rgb(110, 108, 108); left: 400px;}<br>
+        100% {background-color: rgb(70, 68, 68); left: 500px;}</p>
+        
+    <div id="block1"></div>
+
+
+    <h3>Changing Width</h3>
+
+    <p>We can alter an element's dimensions just like the color or any other styling.</p>
+
+    <div id="container2">
+    <div id="block2"></div>
+</div>
+
+    <h3>Here are other example es:</h3>
+
+    <p>We now turn a square into a circle while it's rotating<br>
+    During the different fotograms(0%, 50%, etc), we will apply a <b>border-radius</b> property<br>
+    that will alter the square's borders into a circle while changing the backgorund color<br>
+    and while applying a transform rotation of 0 and degrees at fotograms 50, 75, 100</p>
+
+    <p>0%{border-radius: 50%;}<br>
+        25%{border-radius: 50%; background-color: darkred;}<br>
+        50%{border-radius: 0%; background-color: white; transform: rotate(0deg);}<br>
+        75%{border-radius: 0%; background-color: white; transform: rotate(90deg);}<br>
+        100%{transform: rotate(90deg);}</p>
+    
+        <div id="circlecont">
+        <div id="circle"></div>
+
+      
+    </div>
+
+    
+    
+    
+
+
+    
+  <br>  
+   
+<div id="container2">
+    <div id="block5"></div>
+</div>
+
+<div id="container2">
+    <div id="block4"></div>
+</div>
+<br>
+
+    <p>There are many ways to create an animation, but it depends on how you can organize<br>
+    each fotogram and how will the properties, transformations, and transitions work to get results.</p>
+    <p>We can change an object's values in any specific fotogram.<br>
+    There are many possible animations. It requires practice but it can serve well<br>
+    for any dinamic website </p>
+
+</main>    
+</body>
+</html>
