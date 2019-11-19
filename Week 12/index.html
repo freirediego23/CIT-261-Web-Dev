@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_12_style.css" rel="stylesheet" type="text/css">
+    <script src="week_12.js"></script>
+    <title>Local Storage</title>
+</head>
+<body>
+    
+
+<main id="wrap">
+<div id="header">    
+<h1>Local Storage Api</h1>
+</div>
+<h2>Storing and Retrieving Simple Data</h2>
+
+
+<p>Local storage is possible by using the "localStorage" property<br>
+It will save our data locally without expiring. It can also include arrays or simple words.</p>
+
+<h3>This is my stored ID card</h3>
+
+<p>We define the storage variable name and the content:<br>
+<br>
+    localStorage.setItem("info", "Name: Diego & ID: 235412");<br><br>
+    Set item -> defines (name, content)<br><br>
+</p>
+
+<p>To retrieve the stored item, we use getItem("name of variable")<br>
+    document.getElementById('ID').innerHTML = localStorage.getItem("info");</p>
+
+<button type="button" onclick="start()">Get ID</button>
+<br>
+<p id="ID"></p>
+
+
+<h3>Using Arrays</h3>
+
+<p>To store arrays, these must be converted to a string using "stringify"<br>
+</p>
+<p>Having: var fruit = ["apple", "banano", "grape", "watermelon", "cherry", "strawberry"];<br>
+    localStorage.setItem("list", JSON.stringify(fruit));  
+</p>
+
+<p>The next step is to retrieve the stored string -> var retrievelist = localStorage.getItem("list");</p>
+
+<p>The array can be turned into an object by using JSON.parse<br>
+    var fruits2 = JSON.parse(retrievelist);<br>
+    We can now use any part of the string we got!
+</p>
+
+<p>List of fruits</p>
+
+<button type="button" onclick="fruit()">Start</button>
+<br>
+<div id="fruits"></div>
+
+<p>Calling [4]</p>
+<br>
+
+<div id="fruits2"></div>
+
+
+<h3>Using Objects</h3>
+
+<p>Using an object -> var instrument = new Object();<br>
+    instrument.name = "Guitar";<br>
+    instrument.purpose = "Play some nice music";<br>
+    <br>
+
+   Storing the object -> localStorage.setItem('firstname', instrument.name);<br>
+
+   Retrieving the object -> var instrumentName = localStorage.getItem('firstname');<br>
+   Displaying the object -> document.getElementById('output1').innerHTML = instrumentName;</p>
+<button type="button" onclick="object1()">Start</button>
+<div id = "output1"></div>
+<div id = "output2"></div>
+
+<p>We are going to call an object which is a city's info</p>
+
+<button type="button" onclick="object()">Start</button><br>
+<br>
+<div id="objectoutput"></div>
+
+<h3>Form Input</h3>
+
+<p>For this case, we store each information input into a variable to be also stored<br>
+We have a variable for name imput -> var nameinfo = document.getElementById('name').value;<br>
+We store that variable using localStorage -> localStorage.setItem('name', nameinfo);</p>
+
+<p>Retrieve the stored information -> var name = localStorage.getItem('name');<br>
+   Display the stored information -> document.getElementById('nameOutput').innerHTML = name;</p>
+
+<label>Name</label>
+<input type="text" id="name"><br><br>
+<label>Ocupation</label>
+<input type="text" id="ocupation"><br><br>
+<label>City</label>
+<input type="text" id="city"><br><br>
+
+<button type="button" onclick="information()">Send Info</button><br>
+<br>
+<div id = "nameOutput"></div>
+<div id = "ocupationOutput"></div>
+<div id = "cityOutput"></div>
+
+
+
+</main>
+</body>
+</html>
