@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_02_style.css" rel="stylesheet" type="text/css">
+    <script src="week_02.js"></script>
+    <title>XMLHTTPRequest</title>
+</head>
+<body>
+    <main id="wrap">
+    <div id="header">
+    <h1>Using XMLHTTPRequest to Consume a JSON Web Service</h1>
+    </div>
+
+    <h2>XMLHTTPRequest</h2>
+    <p>The main purpose of XMLHTTPRequest is to obtain data from a web service.<br>
+    This allows our page to be updated automatically.</p>
+    <p>We will use Javascript</p>
+
+    <p>We store the web API link into a variable -> var requestURL = "http://api.openweathermap.org/data/2.5/group?;<br>
+        <br>
+       Now start a request in another variable -> var request = new XMLHttpRequest();<br>
+       <br>
+       Use 'GET' to obtain information and we have the stored variable 'requestURL' -> request.open('GET', requestURL, true,);<br>
+       <br> 
+       Send the request -> request.send();<br>
+       <br> 
+       Use a function to load once the code starts -> request.onload = function () {<br>
+       <br> 
+       Translate the XMLHttpRequest response (which comes as a string) into a Javascript object using Json parse for our web browser -> let data = JSON.parse(request.responseText);<br>
+       <br>   
+    </p>
+       <h2>Second Function</h2>
+
+       <p>Display in console -> console.log(data);<br>
+       <br> 
+       Call a function to store the information and use in HTML -> displayinfo(data);}<br>
+        </p>
+
+        <p>
+        This function is called by the first one to display the info in html ->   function displayinfo(newdata){<br>
+                // First City Info <br>
+                <br>
+
+                This is the JSON string. Newdata is the same data variable reference in the first function ->  newdata.list[0].name;<br>
+                <br>
+
+                list[0] is the first string where the rest is, and we use a dot to access another level of the string <br>
+                <br>
+                document.getElementById("name").innerHTML = newdata.list[0].name;<br>
+                <br>
+
+                //Second City Info<br>
+                <br>
+
+                document.getElementById("name2").innerHTML = newdata.list[1].name;<br>
+                <br>
+
+                //Third City Info<br>
+                <br>
+
+                document.getElementById("name3").innerHTML = newdata.list[2].name;<br>
+
+        </p>
+
+    <h2>Weather Information</h2>
+    
+    <p>This is a weather api providing a continual report about three main cities of Ecuador<br>
+    by using XMLHTTPRequest with a special key provided by the site. Different types of information<br>
+    are selected through the JSON string recieved, and these are placed into containers thanks to Javascript.</p>
+
+    <div id="divwrap">
+    <div class="devwrapper">
+            
+             <div id="div1">
+            <p>Name: <span id="name"></span></p>
+            <p>Country: <span id="country"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Description: <span id="description"></span></p>
+        </div> 
+            
+            <div id="div2">
+            <p>Temp: <span id="temp"></span></p>
+            <p>Wind deg: <span id="wind"></span></p>
+            <p>Wind speed: <span id="wind_speed"></span></p>
+            <img id="icon"></img>
+        </div>
+            <img id="img1" src="portoviejo.jpg" alt="city">
+    </div>
+            
+    
+    
+    <div class="devwrapper">
+        
+             <div id="div1">
+            <p>Name: <span id="name2"></span></p>
+            <p>Country: <span id="country2"></span></p>
+            <p>Humidity: <span id="humidity2"></span></p>
+            <p>Description: <span id="description2"></span></p>
+        </div>
+
+        <div id="div2">
+            
+            <p>Temp: <span id="temp2"></span></p>
+            <p>Wind deg: <span id="wind2"></span></p>
+            <p>Wind speed: <span id="wind_speed2"></span></p>
+            <img id="icon2"></img>
+        </div>
+            <img id="img1" src="quito.jpg" alt="city">  
+    </div>
+    
+
+    <div class="devwrapper">
+             
+        <div id="div1">
+            <p>Name: <span id="name3"></span></p>
+            <p>Country: <span id="country3"></span></p>
+            <p>Humidity: <span id="humidity3"></span></p>
+            <p>Description: <span id="description3"></span></p>
+        </div>
+          <div id="div2"> 
+            <p>Temp: <span id="temp3"></span></p>
+            <p>Wind deg: <span id="wind3"></span></p>
+            <p>Wind speed: <span id="wind_speed3"></span></p>
+            <img id="icon3"></img>
+        </div> 
+            <img id="img1" src="guayaquil.jpg" alt="city">
+    </div>
+    
+</div>
+    
+    <!-- <div id="humidity"></div>
+    <div id="description"></div>
+    <div id="pressure"></div> -->
+
+</main>
+</body>
+</html>
