@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_13_style.css" rel="stylesheet" type="text/css">
+    <script src="week_13.js"></script>
+    <title>Javascript Events</title>
+</head>
+<body onload="load()">
+    
+    <main id="wrap">
+    <div id="header">
+    <h1>Javascript Events</h1>
+    </div>
+
+    <p>Events are actions applied to the page. These can be triggered through Javascript<br>
+    which can also manipulate the page and improve it.</p>
+
+    <h3>Onload</h3>
+
+    <p>This Event handler will automatically activate the code once the page is load.<br>
+    We are going to load a special greeting for our user!</p>
+
+    <div id="welcome" ></div>
+
+
+    <h3>Clicking</h3>
+
+    <p>Using the button element, we can create a button along with the "onclick" atrribute<br>
+    This will activate a Javascript function if the JS file is obviously link to the HTML</p>
+    <p>When the user "clicks" the button, the event will be triggered hence the onclick name</p>
+
+    <button type="button" onclick="activate()">Start</button>
+
+    <p id="output1"></p>
+
+    <p>Working when user clicks the square.</p>
+
+    <div id="keybor" onclick="keyboard()" onclick="keyboard2()"></div>
+
+
+    <h3>Hover & Hovering Out</h3>
+
+    <p>This event will trigger when the user hovers the square.<br>
+    This is done thanks to the "onmouseover" property in the HTML</p>
+
+    <p><b>onmouseover</b> will trigger the JS function that will add styling in this case!</p>
+    <p><b>onmouseout</b> will trigger an additional JS function with the original dimensions of the square<br>
+    once the user stops hovering the square</p>
+
+    <p> id="output2" onmouseover="hover()" onmouseout="reset()"></p>
+
+    <p><b>Onmouseover JS Function</b></p>
+        <p>document.getElementById('output2').style.backgroundColor ="green";<br>
+            document.getElementById('output2').style.border = "4px solid black";<br>
+            document.getElementById('output2').style.height = "350px";<br>
+            document.getElementById('output2').style.width = "350px";<br>
+            document.getElementById('output2').style.transform = "rotateY(180deg)";<br>
+            document.getElementById('output2').style.transition = "3s";<br></p>
+
+        <p><b>Onmouseout JS Function</b></p>
+        <p>function reset() {<br>
+            document.getElementById('output2').style.width = "200px";<br>
+            document.getElementById('output2').style.height = "200px";<br>
+            document.getElementById('output2').style.backgroundColor = "yellow";<br>
+            document.getElementById('output2').style.transform = "rotateY(-180deg)";<br>
+            document.getElementById('output2').style.border = "2px solid black";<br>
+        
+        }<br></p>
+
+
+    <div id="output2" onmouseover="hover()" onmouseout="reset()"></div>
+
+
+    <h3>Keydown</h3>
+
+    <p>onkeydown will trigger the related function once any key is pressed!<br>
+    In this case, we added a small input section to recognize our keyboard activity.<br>
+    The square should decrease its size using a scale transform and turn into a circle.</p>
+
+    <div id="test" onkeydown="keytest()"></div>
+    <br><p>Type anything to activate!</p>
+    <input id="hid" onkeydown="keytest()">
+    <h3>Touchstart Event</h3>
+
+    <p>This event will trigger the JS code when an user touchs a determined element of the page.</p>
+
+    <p>This square will turn green once you touch it! (Valid only for mobile devices)</p>
+    <p>Thanks to the "ontouchstart" event, we can trigger several JS functions in the DOM.</p>
+
+    <p>We will trigger the ontouchend property to apply another function when someone removes the finger<br>
+    from the screen.</p>
+    
+    <div id="screen" ontouchstart="screen()" ontouchend="screenend()"></div>
+    
+    </main>
+
+</body>
+</html>
