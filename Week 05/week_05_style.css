@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
+
+body {
+    background-color: #F8F9F9;
+}
+
+
+#wrapper {
+    background-color: white;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #69de92;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+}
+
+#header2 {
+    background-color: #2f3239;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+}
+
+#par {
+    color: white;
+}
+
+#block_cont {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30 px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+
+input {
+    margin-left: 15px;
+}
+
+
+
+.sub_cont {
+    flex-direction: column;
+}
+
+button {
+    color: white;;
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid lightgreen;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+#block1 {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#block2 {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#block3 {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+#block4 {
+    background-color: yellow;
+    border: 8px solid green;
+    height: 200px;
+    width: 200px;
+}
+
+#block5 {
+    position: relative;
+    background-color: lightgreen;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+#block6 {
+    border-radius: 50% 50% 50% 50%;
+    background-color: white;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+#block7 {
+    border-radius: 50% 50% 50% 50%;
+    background-color: rgb(122, 122, 115);
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+#cloudoutput {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+}
+
+
+/*CSS animation */
+#block8 {
+    position: relative;
+    border-radius: 50% 50% 50% 50%;
+    background-color: gainsboro;
+    border: 8px solid black;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    width: 200px;
+}
+
+@keyframes move {
+    0% {background-color: lightyellow; left: 0px; }
+    25% {background-color: lightyellow; left: 200px; }
+    50% {background-color: yellow; left: 400px;  }
+    75% {background-color: orange; left: 600px; }
+    100% {background-color: red; left: 750px; }
+}
+
+@keyframes restart {
+    
+    0% {background-color: red; left: 750px; }
+    25% {background-color: orange; left: 600px; }
+    50% {background-color: yellow; left: 400px;  }
+    75% {background-color: lightyellow; left: 200px; }
+    100% {background-color: lightyellow; left: 0px; }
+}
+
+
+/* CSS Transform */
+
+#block9 {
+    position: relative;
+    /* border-radius: 50% 50% 50% 50%; */
+    background-color: green;
+    border: 8px solid black;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    width: 200px;
+}
+
+@keyframes transfr {
+    0% {background-color: red; left: 0px; }
+    35% {background-color: red; left: 200px; }
+    70% {background-color: red; left: 600px; }
+    100% {background-color: red; left: 750px;}
+}
+
+#block10 {
+    position: relative;
+    /* border-radius: 50% 50% 50% 50%; */
+    background-color: purple;
+    border: 8px solid black;
+    height: 200px;
+    width: 200px;
+}

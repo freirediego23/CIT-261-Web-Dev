@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="week_05_style.css" rel="stylesheet" type="text/css">
+    <script src="week_05.js"></script>
+    <title>Manipulating CSS With Javascript</title>
+</head>
+<body>
+
+    <main id="wrapper">
+    <div id="header">
+    <h1>Manipulating CSS With Javascript</h1>
+
+    <p>Javascript is capable of handling CSS to provide an additional styling effect.<br>
+    There are multiple ways to use it, let's check out some:</p>
+    </div>
+
+    <h2>Color Styling</h2>
+
+    <p>We can change the font color of any paragraph </p>
+    <p>The following has its color changed using style.property attribute<br>
+    plus an ID as reference:</p>
+
+    <p>The sun is <span id="yellow">yellow</span></p>
+    
+    <p>Roses are <span id="red">red</span> and<br>
+    violets are <span id="blue">blue</span></p>
+    <button type="button" onclick="color()">blue</button>
+
+    <h2>Can't See The Paragraph</h2>
+
+    <p id="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> 
+        Aenean fringilla blandit nunc ac dapibus. Nulla volutpat nibh nunc.<br>
+         Etiam ut odio velit. Fusce nec orci enim.Ut mollis aliquam laoreet.</p>
+
+         <button type="button" onclick="change()">Here!</button>
+
+         <p>We are using animation here thanks to style.transition! There are multiple things to try with Javascript</p>
+
+
+
+    <h2>Background Styling</h2>
+
+    <p>Using our new JS skills, let's add some styling:<br>
+        Please choose a color to fill these empty blocks.
+    </p>
+    
+    <div id="block_cont">
+    <div class="sub_cont">   
+    <div id="block1"></div>
+    <button type="button" onclick="yellow1()">Yellow</button>
+    <button type="button" onclick="blue1()">Blue</button>
+    <button type="button" onclick="red1()">Red</button>
+    </div> 
+    <div class="sub_cont">
+    <div id="block2"></div>
+    <button type="button" onclick="yellow2()">Yellow</button>
+    <button type="button" onclick="blue2()">Blue</button>
+    <button type="button" onclick="red2()">Red</button>
+    </div>
+    <div class="sub_cont">
+    <div id="block3"></div>
+    <button type="button" onclick="yellow3()">Yellow</button>
+    <button type="button" onclick="blue3()">Blue</button>
+    <button type="button" onclick="red3()">Red</button>
+    </div>
+        </div>
+
+    <br>
+
+    <h2>Give the Correct Answer:</h2>
+    <p>We use conditional statements to review user input. If the input matches one of the colors<br>
+    it will update the .style backround color with the new one.</p>    
+    <p>What Color Would You Like?<br>
+        Type:
+    </p><br>
+    <input type="text" id="cloudip">
+    <div id="cloudoutput"></div>
+    <button type="button" onclick="cloud()">Enter</button>
+
+    <div id="block6"></div>
+
+
+
+    <br>
+    <br>
+    <div id="header2">
+        <h1>CSS Transitions, Animations, Transformations</h1>
+    
+        <p>Javascript is also capable of prompting animations with CSS properties.<br>
+        We can create our own keyframes and specifications for many animations patterns:</p>
+        </div>    
+
+
+    <h2>Animation Test</h2>
+    <button type="button" onclick="move()">Move</button> 
+    <p>Trying to animate a div using JS. We set the block with a postion: relative.<br>
+    Using the setinterval property, we specify a variable and the interval speed (frame, 4)<br>
+    Then specify a function with a conditional statement to clear the interval once it reachess 600px<br>
+    The else part will increase the value of the position which is currently set a 0. The final portion is<br>
+    elem.style.left = position + 'px'</p>
+    <div id="block5"></div> 
+    <br>
+    
+    
+
+    <h2>Styling Object Dimensions</h2>
+
+    <p>Can we change the square size using JS? Yes, we can!</p> 
+    <p>Using the transition property, we can set the time interval<br>
+    for the animation to start.</p> 
+    <p><b>These are the properties for the square transition:</b></p>
+    <p>document.getElementById("block4").style.height = "300px";<br>
+        document.getElementById("block4").style.width = "300px";<br>
+        document.getElementById("block4").style.transition = "2s";</p> 
+    <br>
+    <div id="block4"></div>
+    <button type="button" onclick="grow()">Water</button> <button type="button" onclick="restart()">Restart</button>
+
+
+    <h2>Change the Size of Circle</h2>
+    <p>We are using a combination of conditional statments with the .style attribute in JS.<br>
+    IF the value overpasses 0 both height and width will be updated with user input!</p>
+    <p>Type the value here:</p>
+    <input type="text" id="sizevalue"><br>
+    <button type="button" onclick="changesize()">Enter</button><br>
+    <br>
+    <div id="block7"></div>
+
+    <br>
+
+    <h2>CSS animations</h2>
+    
+    <p>Using animations will allow us to change elementes at the pace we want<br>
+    We must first specify @keyframes which will determine how gradually our animations<br>
+    will change.</p>
+
+    <div id="block8">SUN</div>
+    <button type="button" onclick="trigger()">Start</button><br>
+    <button type="button" onclick="reset2()">Back!</button>
+
+
+    <h2>CSS Transform</h2>
+    
+    <p>TUsing the trasnform property will apply a 2D or 3D effect to the element selected.<br>
+    Let's combine it with other methods:</p>
+        <p>Rotate 2D effect</p>
+    <div id="block9"></div>
+    
+
+    <button type="button" onclick="transform()">Start</button>
+
+    
+        <p>3D effects</p>
+        <div id="block10"></div>
+        
+    
+        <button type="button" onclick="transform2()">Start</button>
+    
+
+
+    </main>
+        <script>
+        document.getElementById("yellow").style.color = "yellow";
+        document.getElementById("red").style.color = "red";
+        </script>
+
+</body>
+</html>
