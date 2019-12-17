@@ -1,0 +1,36 @@
+* { padding: 0; margin: 0; }
+ canvas { 
+		background: #eee; 
+		display: block; 
+		margin: 0 auto;		 
+}
+
+
+#screen {
+	border-radius: 50% 50% 50% 50%;
+    background-color: white;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* Smaller Devices */
+@media only screen and (max-width: 528px) {
+
+
+	canvas { 
+		background: #eee; 
+		display: block; 
+		margin: 0 auto;
+		width: 320px;
+		height: 160px; 
+			 
+}
+
+
+
+
+
+}
+
