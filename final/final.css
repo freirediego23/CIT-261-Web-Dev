@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Roboto&display=swap');
+
+
+* { padding: 0; margin: 0; }
+ canvas { 
+		background: #eee; 
+		display: block; 
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 30px;		 
+}
+
+
+#screen {
+	border-radius: 50% 50% 50% 50%;
+    background-color: white;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+
+body {
+    background-color: #F8F9F9;
+}
+
+#header {
+    background-color: #273238;
+    color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30 px;
+	margin-left: 15px;
+	
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+	margin-left: 15px;
+	text-align: center;
+}
+
+#span1 {
+	color: blue;
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+	margin-left: 15px;
+	
+	/* animation: infinite; */
+}
+
+#span2 {
+	color: gray;
+	font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+	margin-left: 15px;
+	
+	/* animation: infinite; */
+}
+/* #span1:start {
+	
+	transition: 3s infinite;
+} */
+
+/* Smaller Devices */
+@media only screen and (max-width: 528px) {
+
+
+	canvas { 
+		background: #eee; 
+		display: block; 
+		margin: 0 auto;
+		margin-top: 30px;
+		width: 320px;
+		height: 160px; 
+			 
+}
+
+
+body {
+    background-color: #F8F9F9;
+}
+
+#header {
+    background-color: #273238;
+    color: white;
+    padding: 6px 6px 6px 6px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6 px;
+    margin-left: 8px;
+}
+
+
+}
+
